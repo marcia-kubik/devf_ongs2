@@ -13,7 +13,7 @@
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries 
          WARNING: Respond.js doesn'<!doctype html>-->
 
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
     <link rel="stylesheet" href="styles/main.css">
@@ -33,16 +33,23 @@
         <article class="container">
           <div class="header">
             <ul class="nav nav-pills pull-right">
-              <li><a href="#">¡Regístrate!</a></li>
+              <li><a href="#registrate">¡Regístrate!</a></li>
             </ul>
             <img src="images/devf-logo.png" alt="">
           </div>
             <p class="heading_1">¡Hola!</p>
-            <p class="heading_2">¿Trabajas en una ONG <br> y no tienes un sitio web?</p>
-            <p class="subheading">Si estás haciendo algo bueno por el mundo <br>queremos ayudarte. <br><a href="#detalles"> Ver más detalles.</a></p>
+            <h1 class="heading_2">¿Trabajas en una ONG <br> y no tienes un sitio web?</h1>
+            <p class="subheading">Si estás haciendo algo bueno por el mundo <br>queremos ayudarte. <br></p>
+            <!-- <a href="#detalles"> Ver más detalles</a> -->
         </article>
+        <div class="next">
+          <a href="#detalles">
+            <p>¿De qué se trata?</p>
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+          </a>
+        </div>
       </section>
-      <section class="cont section2">
+      <section id="detalles" class="cont section2">
         <article class="container">
             <p class="heading_1">¿De qué se trata?</p>
             <p class="text_1">Permítenos presentarnos</p>
@@ -52,45 +59,58 @@
             <br>
             El enfoque educativo es aprender haciendo, por lo que los proyectos en los que se trabajan son aplicaciones de software reales que la gente puede utilizar de manera inmediata al terminar el programa.</p>
             <p class="text_4">Si ya estamos creando sitios web reales, <br>¿por qué no ayudar a ONGs a construir sus páginas?</p>
-            <p class="text_3">Conoce más en <a target="_blank" href="http://www.devf.mx">devf.mx</a></p>
+            <p class="text_3">Conoce más en <a style="margin-left:10px" class="link-devf" target="_blank" href="http://www.devf.mx">devf.mx</a></p>
         </article>
+        <div class="next">
+          <a href="#como-funciona">
+            <p>¿Cómo funciona?</p>
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+          </a>
+        </div>
       </section>
 
-      <section class="cont section3">
+      <section id="como-funciona" class="cont section3">
         <article class="container center">
           <p class="heading_1 ">¿Cómo funciona?</p>
           <p class="text_1">Como un acuerdo</p>
-          <div class="col-sm-5">
+          <div class="col-md-5 col-sm-6">
             <p class="text_5">ONG</p>
             <p class="text_1">Tú te comprometes a:</p>
             <table class="table table-bordered">
-              <tr><td>Brindarnos información sobre tu proyecto</td></tr>
-              <tr><td>Estar al tanto del proyecto</td> </tr>
-              <tr><td>Usar el sitio web que te entreguemos para bien</td> </tr>
+              <tr><td>Brindarnos la información sobre tu proyecto a tiempo.</td></tr>
+              <tr><td>Estar en contacto durante el desarrollo.</td> </tr>
+              <tr><td>Darle el mejor uso posibe al sitio.</td> </tr>
             </table>
           </div>
           
-          <div class="col-sm-5 col-sm-offset-2">
+          <div class="col-md-5 col-sm-6 col-md-offset-2">
             <img src="images/devf-logo.png">
             <p class="text_1">Nosotros nos comprometemos a:</p>
             <table class="table table-bordered">
-              <tr><td>Brindarnos información sobre tu proyecto</td></tr>
-              <tr><td>Estar al tanto del proyecto</td> </tr>
-              <tr><td>Usar el sitio web que te entreguemos para bien</td> </tr>
+              <tr><td>Usar la información de tu proyecto responsablemente.</td></tr>
+              <tr><td>Desarrollar un sitio web de excelente calidad.</td> </tr>
+              <tr><td>Ajustarnos a tus necesidades.</td> </tr>
             </table>
           </div>
 
         </article>
+        <div class="next">
+          <a href="#registrate">
+            <p>¡Regístrate!</p>
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+          </a>
+        </div>
       </section>
 
-      <section class="cont section4">
+      <section id="registrate" class="cont section4">
         <article class="container">
           <div class="left-side col-md-5">
-          <p class="heading_1">¡Inscríbete!</p>
+          <p class="heading_1">¡Regístrate!</p>
           <p class="text_5">Nos encatará escuchar de ti y poder apoyarte.</p>
           <p class="text_3">Además ¿a quién no le que gustaría que inteligente y apasionada le ayude a tener una buena presencia online?</p>
             <img class="form-img" src="images/img_diagrama.png" alt="">
           </div>
+
           <div class="right-side col-md-7">
             <form action="">
             <div class="form-group">
@@ -106,17 +126,31 @@
               </div>
             </form>
           </div>
+
+          <!-- MENSAJE DE AGRADECIMIENTO ____________________________________________
+          <div class="right-side col-md-6 col-md-offset-1">
+            <p class="thanks">¡Muchas gracias por registrarte!</p>
+            <p class="thanks_2">Muy pronto nos pondremos en contacto contigo.</p>
+            <a class="link-devf" target="_blank" href="http://www.devf.mx">devf.mx</a>
+          </div> -->
+
         </article>
+        <footer class="center">
+          <a href="http://facebook.com/devfmx">Facebook</a>
+          <a href="http://twitter.com/devfmx">Twitter</a>
+          <a href="https://blog.devf.mx/">Blog</a>
+        </footer>
       </section>
     </main>
-    <footer>
-      
-    </footer>
+    
     
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<!-- 
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+     -->
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -141,6 +175,7 @@
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
+    <script src="js/main.js"></script>
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
